@@ -1,0 +1,16 @@
+
+body  {
+    text-align: center;
+}
+
+
+#Cover {
+    display: flex;
+    flex-direction: columm;
+    background-color: aquamarine;
+    
+}
+
+
+
+
