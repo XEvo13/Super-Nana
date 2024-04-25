@@ -137,6 +137,7 @@ class Game {
   }
   // Create a new method responsible for ending the game
   endGame() {
+    const showResult = document.createElement("h3");
     this.player.element.remove();
     this.soundtrack.pause();
     this.obstacles.forEach(obstacle => obstacle.element.remove());
@@ -145,5 +146,16 @@ class Game {
     this.gameScreen.style.display = "none";
     // Show end game screen
     this.gameEndScreen.style.display = "block";
+    showResult.innerHTML = `Score: ${this.score}`
+    showResult.style.position = "absolute";
+    showResult.style.top = "500px";
+    showResult.style.left = "650px";
+    showResult.style.top = "300px";
+    showResult.style.fontSize = "60px";       
+    showResult.style.fontFamily = "Jersey 25";      // Styling and applying 
+    showResult.style.color = "white";  
+
+    this.gameEndScreen.appendChild(showResult)
+
   }
 }

@@ -44,6 +44,9 @@ h2{
   align-content: center;
   font-size: 50px
 }
+h3{
+  font-family: "Jersey 25", sans-serif;
+}
 
 #space-bar {
   position: absolute;
