@@ -1,16 +1,99 @@
+body {
+  padding: 0;
+  text-align: center;
+}
 
-body  {
-    text-align: center;
+#game-intro {
+  padding: 20px 0px;
+  display: flex;
+  justify-content:center;
+}
+
+#Instructions {
+  position: absolute;
+  text-shadow: black;
+  color: whitesmoke;
+  font-size: 33px;
+  height: 200px;
+  width: 130px;
+  left: 800px;
+  top:360px
+}
+
+#gameOver  {
+  color: white;
+  font-size: 90px;
+  position: absolute;
+  font-family: "Jersey 25", sans-serif;
+  top: 240px;
+  left: 570px
+}
+
+#GameTitle {
+  font-family: "Jersey 25", sans-serif;
+  position: absolute;
+  color: whitesmoke;
+  font-size: 70px;
+  margin-top: 8px;
+}
+
+h2{
+  width: 30vw;
+  background-color: aqua;
+  margin: 0;
+  align-content: center;
+  font-size: 50px
+}
+
+#space-bar {
+  position: absolute;
+  left: 170px;
+  top: 500px;
+  height: 120px;
+  width: 500px;
+}
+
+#game-container {
+  display: flex;
+  width: 100vw;
+  padding: 20px 0px;
+  justify-content: center;
+}
+
+#game-screen {
+  display: none;
+  align-content: center;
+  /* padding: 20px 0px; */
+  overflow: hidden;
+  position: relative;
+  background-image: url(../images/backgroundFinal.gif);
+  background-position: bottom;
+  background-size: cover;
+  margin-top: 8px;
+}
+
+#game-end {
+  display: none;
+  padding: 0px
 }
 
 
-#Cover {
-    display: flex;
-    flex-direction: columm;
-    background-color: aquamarine;
-    
+.logo-img {
+  height: 600px;
+  width: 1000px;
+  justify-content:center;
 }
 
-
-
-
+body button {
+  font-size: 30px;
+  background-color: #4f4ade;
+  color: #fff;
+  padding: 20px 40px;
+  border: 0;
+  box-shadow: 0;
+  border-radius: 30px;
+  margin-bottom: 0;
+  position: absolute;
+  top: 370px;
+  left: 300px;
+}

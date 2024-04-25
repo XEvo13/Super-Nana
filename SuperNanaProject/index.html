@@ -1,20 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div id="Cover">
-        <img id="CoverImg"/>
-        <br />
-        
-        <p>
-          
-        </p>
-        <p></p>
-        <img/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>SUPER NANA</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+      </style>
+  </head>
+  <body>
+    <main>
+      <!-- #game-intro is initially shown on the game start screen -->
+      <div id="game-intro">
+        <h1 id="GameTitle"> \\ SUPER NANA // </h1>
+        <button id="start-button">Start Game</button>
+        <img id="space-bar" src="/images/spaceBarButton.gif">
+        <img src="/images/logoFinal.png" alt="" class="logo-img" />
+        <div id="Instructions"> " Press on start button, use space bar to jump "</div>
+        </div>
+        <audio id="soundtrack" src="/sounds/gameSound.mp3"></audio>
+        <audio id="audioEffect" src="/sounds/nanaEffect.mp3"></audio> <!-- added -->
       </div>
-</body>
+      
+      <div id="game-container">
+        <!-- #game-screen is initially hidden using CSS style display: none -->
+        <div id="game-screen">
+          <div id="game-scoreboard">
+            <div id="lives-counter"></div>
+            <div id="score-counter"></div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- #game-end is initially hidden using CSS style display: none -->
+      <div id="game-end">
+        <img src="/images/gameOverFinal.png" id="test"alt="" class="logo-img" />
+        <h1 id="gameOver">Game Over</h1>
+        <br />
+        <button id="restart-button">Restart</button>
+      </div>
+    </main>
+    <script type="text/javascript" src="js/obstacle.js"></script>
+    <script type="text/javascript" src="js/player.js"></script>
+    <script type="text/javascript" src="js/game.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
 </html>
