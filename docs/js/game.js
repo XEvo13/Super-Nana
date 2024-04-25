@@ -23,7 +23,7 @@ class Game {
       300, // top property
       50, // width property
       60, // height property
-      "./images/nana2.gif" // image source
+      "./docs/images/nana2.gif" // image source
     );
   }
 

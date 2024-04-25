@@ -6,7 +6,7 @@ class Obstacle {
     this.width = 80;
     this.height = 450;
     this.element = document.createElement("img");
-    this.element.src = "./images/pipe2.png";
+    this.element.src = "./docs/images/pipe2.png";
     this.element.style.position = "absolute";
     this.element.style.width = `${this.width}px`;
     this.element.style.height = `${this.height}px`;
@@ -37,7 +37,7 @@ class ObstacleUpSide {
     this.width = 80;
     this.height = 450;
     this.element = document.createElement("img");
-    this.element.src = "./images/UpsidePipe.png";
+    this.element.src = "./docs/images/UpsidePipe.png";
     this.element.style.position = "absolute";
     this.element.style.width = `${this.width}px`;
     this.element.style.height = `${this.height}px`;
@@ -50,7 +50,7 @@ class ObstacleUpSide {
     // Update the obstacle's position based on the property left
     this.element.style.left = `${this.left}px`; 
   }
-  
+  // 
   move() {
     // Move the obstacle down by 3px
     this.left -= 3;
