@@ -35,7 +35,7 @@ window.onload = function () {
       // Update player's directionY based on the key pressed
       if (key) {
             game.isRunning = true;
-            game.player.directionY = - game.player.jumpPower;
+            game.player.directionY = - game.player.jumpPower; 
             audioButton.play(); 
             audioVolume.volume = 0.1;
       }

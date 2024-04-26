@@ -100,3 +100,9 @@ body button {
   top: 370px;
   left: 300px;
 }
+
+#game-scoreboard {
+  font-family: "Black Ops One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  }

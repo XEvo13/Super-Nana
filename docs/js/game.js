@@ -12,7 +12,7 @@ class Game {
     this.lives = 1;
     this.counter = 90 //This is the start counter that will be decreased by if statments on line 115. 
                       //This will set up the initial time between obstacles to appear on the screen 
-    this.isRunning = false;
+    this.isRunning = false; // The player and obstacles movement will not move until the first space bar hit
     this.gameIsOver = false; //This property will ste up the initial value. If this value is true, the game loop will stop by clearInterval
     this.gameIntervalId; // Setting up the property
     this.gameLoopFrequency = Math.round(1000/60); // 60fps
@@ -45,13 +45,9 @@ class Game {
     this.gameIntervalId = setInterval(() => {
       this.gameLoop()
     }, this.gameLoopFrequency) 
-    
-
   }
 
   gameLoop() {
-  
-    //console.log("in the game loop");
     this.update();
     // If "gameIsOver" is set to "true" clear the interval to stop the loop
     if (this.gameIsOver) {
@@ -152,7 +148,7 @@ class Game {
     showResult.style.left = "650px";
     showResult.style.top = "300px";
     showResult.style.fontSize = "60px";       
-    showResult.style.fontFamily = "Jersey 25";      // Styling and applying 
+    showResult.style.fontFamily = "Black Ops One";      // Styling and applying 
     showResult.style.color = "white";  
 
     this.gameEndScreen.appendChild(showResult)
